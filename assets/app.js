@@ -41,6 +41,10 @@ document.querySelectorAll('.faq-button').forEach(button=>button.addEventListener
 
 const SUPABASE_CONTACT_LEADS_URL='https://ocydhmnlomnibdruinhb.supabase.co/rest/v1/contact_leads';
 const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jeWRobW5sb21uaWJkcnVpbmhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc2NzI5MjMsImV4cCI6MjEwMzI0ODkyM30.W690DRzkw0f_iWdyPjy4vvWCeVHcPsLxqA8SiDAYr7Y';
+const EMAILJS_API_URL='https://api.emailjs.com/api/v1.0/email/send';
+const EMAILJS_SERVICE_ID='service_mr6qhfy';
+const EMAILJS_TEMPLATE_ID='template_y4y0gl8';
+const EMAILJS_PUBLIC_KEY='5vTFdcXJ0G3y7ZaPs';
 const impactMap={
   tiempo:'consume_tiempo',
   consume_tiempo:'consume_tiempo',
@@ -50,13 +54,42 @@ const impactMap={
   falta_control:'falta_control',
   otro:'otro'
 };
+const impactLabels={
+  consume_tiempo:'Consume tiempo',
+  genera_errores:'Genera errores',
+  falta_control:'Falta control',
+  otro:'Otro'
+};
 const getFieldValue=(form,name)=>String(new FormData(form).get(name)||'').trim();
+const getLeadData=form=>{
+  const currentImpact=[...new Set([...form.querySelectorAll('input[name="impacto"]:checked')].map(input=>impactMap[input.value]).filter(Boolean))];
+  return {
+    full_name:getFieldValue(form,'nombre'),
+    company:getFieldValue(form,'empresa'),
+    email:getFieldValue(form,'correo'),
+    phone:getFieldValue(form,'telefono')||null,
+    process_problem:getFieldValue(form,'problema'),
+    current_impact:currentImpact,
+    impact_labels:currentImpact.map(value=>impactLabels[value]||value)
+  };
+};
 const showFormMessage=(form,message,isError=false)=>{
   const messageEl=form.parentElement.querySelector('.success');
   if(!messageEl)return;
   messageEl.textContent=message;
   messageEl.classList.toggle('error',isError);
   messageEl.classList.add('show');
+};
+const setFormSubmitting=(form,isSubmitting)=>{
+  const modalDialog=form.closest('.process-modal');
+  const loadingOverlay=modalDialog?.querySelector('[data-modal-loading]');
+  form.classList.toggle('is-submitting',isSubmitting);
+  form.querySelectorAll('input,textarea,select,button').forEach(control=>{control.disabled=isSubmitting});
+  if(modalDialog){
+    modalDialog.classList.toggle('is-submitting',isSubmitting);
+    modalDialog.setAttribute('aria-busy',isSubmitting?'true':'false');
+  }
+  loadingOverlay?.setAttribute('aria-hidden',isSubmitting?'false':'true');
 };
 const setModalView=view=>{
   if(!modal)return;
@@ -75,8 +108,7 @@ const showLeadSuccess=()=>{
   body.classList.add('modal-open');
   modal.querySelector('[data-success-continue]')?.focus();
 };
-const submitLead=async form=>{
-  const impacts=[...new Set([...form.querySelectorAll('input[name="impacto"]:checked')].map(input=>impactMap[input.value]).filter(Boolean))];
+const submitLead=async lead=>{
   const response=await fetch(SUPABASE_CONTACT_LEADS_URL,{
     method:'POST',
     headers:{
@@ -86,12 +118,40 @@ const submitLead=async form=>{
       prefer:'return=minimal'
     },
     body:JSON.stringify({
-      full_name:getFieldValue(form,'nombre'),
-      company:getFieldValue(form,'empresa'),
-      email:getFieldValue(form,'correo'),
-      phone:getFieldValue(form,'telefono')||null,
-      process_problem:getFieldValue(form,'problema'),
-      current_impact:impacts
+      full_name:lead.full_name,
+      company:lead.company,
+      email:lead.email,
+      phone:lead.phone,
+      process_problem:lead.process_problem,
+      current_impact:lead.current_impact
+    })
+  });
+  if(!response.ok)throw new Error(await response.text());
+};
+const sendLeadNotification=async lead=>{
+  const response=await fetch(EMAILJS_API_URL,{
+    method:'POST',
+    headers:{'content-type':'application/json'},
+    body:JSON.stringify({
+      service_id:EMAILJS_SERVICE_ID,
+      template_id:EMAILJS_TEMPLATE_ID,
+      user_id:EMAILJS_PUBLIC_KEY,
+      template_params:{
+        title:'Nueva solicitud de cotización',
+        name:lead.full_name,
+        email:lead.email,
+        nombre:lead.full_name,
+        empresa:lead.company,
+        correo:lead.email,
+        telefono:lead.phone||'No proporcionado',
+        producto:'Análisis de proceso',
+        cantidad:'No aplica',
+        entrega:'Por definir',
+        descripcion:[
+          lead.process_problem,
+          `Impacto actual: ${lead.impact_labels.length?lead.impact_labels.join(', '):'No especificado'}`
+        ].join('\n\n')
+      }
     })
   });
   if(!response.ok)throw new Error(await response.text());
@@ -103,21 +163,23 @@ const bindDiagnosticForms=()=>document.querySelectorAll('[data-diagnostic-form]'
   form.addEventListener('submit',async event=>{
     event.preventDefault();
     const button=form.querySelector('button[type="submit"]');
+    const lead=getLeadData(form);
     button.dataset.label=button.dataset.label||button.textContent;
-    button.disabled=true;
+    setFormSubmitting(form,true);
     button.setAttribute('aria-busy','true');
     button.classList.add('is-loading');
     button.textContent='Enviando...';
     form.parentElement.querySelector('.success')?.classList.remove('show','error');
     try{
-      await submitLead(form);
+      await submitLead(lead);
+      await sendLeadNotification(lead);
       form.reset();
       showLeadSuccess();
     }catch(error){
-      console.error('No se pudo registrar el lead en Supabase.',error);
+      console.error('No se pudo enviar la solicitud.',error);
       showFormMessage(form,'No pudimos enviar tu información. Inténtalo de nuevo en un momento.',true);
     }finally{
-      button.disabled=false;
+      setFormSubmitting(form,false);
       button.removeAttribute('aria-busy');
       button.classList.remove('is-loading');
       button.textContent=button.dataset.label;
@@ -131,7 +193,9 @@ document.body.insertAdjacentHTML('beforeend',modalHtml);
 bindDiagnosticForms();
 
 const modal=document.querySelector('[data-process-modal]');
+modal?.querySelector('.process-modal')?.insertAdjacentHTML('beforeend','<div class="modal-loading-overlay" data-modal-loading role="status" aria-live="polite" aria-hidden="true"><div class="modal-loader" aria-hidden="true"></div><p>Enviando solicitud...</p></div>');
 const closeModal=()=>{
+  if(modal?.querySelector('.process-modal.is-submitting'))return;
   modal?.classList.remove('open');
   modal?.setAttribute('aria-hidden','true');
   body.classList.remove('modal-open');
