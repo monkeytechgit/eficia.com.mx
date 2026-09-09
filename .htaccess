@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.eficia\.com\.mx$ [NC]
+RewriteRule ^(.*)$ https://eficia.com.mx/$1 [R=301,L]
+
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^soluciones\.html$ /servicios.html [R=301,L]

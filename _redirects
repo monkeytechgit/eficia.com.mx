@@ -1,0 +1,5 @@
+http://eficia.com.mx/* https://eficia.com.mx/:splat 301!
+http://www.eficia.com.mx/* https://eficia.com.mx/:splat 301!
+https://www.eficia.com.mx/* https://eficia.com.mx/:splat 301!
+/index.html / 301!
+/soluciones.html /servicios.html 301!

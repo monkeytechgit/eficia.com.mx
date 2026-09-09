@@ -1,0 +1,25 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/soluciones.html",
+      "destination": "/servicios.html",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.eficia.com.mx"
+        }
+      ],
+      "destination": "https://eficia.com.mx/$1",
+      "permanent": true
+    }
+  ]
+}
