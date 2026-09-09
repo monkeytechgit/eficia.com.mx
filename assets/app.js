@@ -2,6 +2,11 @@ const body=document.body,root=document.documentElement,header=document.querySele
 root.classList.add('js');
 requestAnimationFrame(()=>body.classList.add('page-ready'));
 
+document.querySelectorAll('.nav-links > a[href="contacto.html"]').forEach(contactLink=>{
+  if(contactLink.parentElement?.querySelector('a[href="proyectos.html"]'))return;
+  contactLink.insertAdjacentHTML('beforebegin','<a href="proyectos.html">Proyectos</a>');
+});
+
 let ticking=false;
 const scrollState=()=>{
   header?.classList.toggle('scrolled',scrollY>12);
@@ -55,9 +60,9 @@ const impactMap={
   otro:'otro'
 };
 const impactLabels={
-  consume_tiempo:'Consume tiempo',
-  genera_errores:'Genera errores',
-  falta_control:'Falta control',
+  consume_tiempo:'Ahorrar tiempo',
+  genera_errores:'Reducir errores',
+  falta_control:'Tener más control',
   otro:'Otro'
 };
 const getFieldValue=(form,name)=>String(new FormData(form).get(name)||'').trim();
@@ -171,8 +176,16 @@ const bindDiagnosticForms=()=>document.querySelectorAll('[data-diagnostic-form]'
     button.textContent='Enviando...';
     form.parentElement.querySelector('.success')?.classList.remove('show','error');
     try{
-      await submitLead(lead);
-      await sendLeadNotification(lead);
+      const results=await Promise.allSettled([
+        submitLead(lead),
+        sendLeadNotification(lead)
+      ]);
+      if(results.every(result=>result.status==='rejected')){
+        throw results[0].reason;
+      }
+      results.forEach(result=>{
+        if(result.status==='rejected')console.warn('Un canal de envío falló.',result.reason);
+      });
       form.reset();
       showLeadSuccess();
     }catch(error){
@@ -228,7 +241,7 @@ modal?.addEventListener('click',event=>{
   if(event.target===modal||event.target.closest('[data-close-modal]'))closeModal();
   if(event.target.closest('[data-success-continue]')){
     closeModal();
-    location.href='soluciones.html';
+    location.href='servicios.html';
   }
 });
 addEventListener('keydown',event=>{
@@ -267,3 +280,36 @@ if(matchMedia('(pointer:fine)').matches){
     el.addEventListener('mouseleave',()=>el.style.transform='');
   });
 }
+
+/* Eficia v4 — Services dropdown */
+const serviceDropdown=document.querySelector('.nav-dropdown');
+const serviceDropdownToggle=document.querySelector('.nav-dropdown-toggle');
+if(serviceDropdown && serviceDropdownToggle){
+  const closeServiceDropdown=()=>{
+    serviceDropdown.classList.remove('open');
+    serviceDropdownToggle.setAttribute('aria-expanded','false');
+  };
+  serviceDropdownToggle.addEventListener('click',event=>{
+    if(matchMedia('(max-width:760px)').matches){
+      event.preventDefault();
+      const open=serviceDropdown.classList.toggle('open');
+      serviceDropdownToggle.setAttribute('aria-expanded',String(open));
+    }
+  });
+  document.addEventListener('click',event=>{
+    if(!serviceDropdown.contains(event.target)) closeServiceDropdown();
+  });
+  document.addEventListener('keydown',event=>{
+    if(event.key==='Escape') closeServiceDropdown();
+  });
+  addEventListener('resize',()=>{
+    if(!matchMedia('(max-width:760px)').matches) closeServiceDropdown();
+  },{passive:true});
+}
+
+/* Keep mobile navigation ARIA state synchronized after navigation. */
+document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>{
+  toggle?.setAttribute('aria-expanded','false');
+  serviceDropdown?.classList.remove('open');
+  serviceDropdownToggle?.setAttribute('aria-expanded','false');
+}));
