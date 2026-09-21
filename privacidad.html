@@ -14,15 +14,18 @@
   <meta name="publisher" content="Eficia">
   <meta name="application-name" content="Eficia">
 
+  <meta name="geo.region" content="MX-BCN">
+  <meta name="geo.placename" content="Tijuana, Baja California, México">
   <link rel="canonical" href="https://eficia.com.mx/privacidad.html">
   <link rel="alternate" hreflang="es-MX" href="https://eficia.com.mx/privacidad.html">
   <link rel="alternate" hreflang="x-default" href="https://eficia.com.mx/privacidad.html">
 
+  <link rel="alternate" type="application/rss+xml" title="Blog de Eficia" href="https://eficia.com.mx/feed.xml">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="Eficia">
   <meta property="og:title" content="Aviso de Privacidad | Eficia México">
-  <meta property="og:description" content="Información general sobre datos personales, finalidades, terceros y derechos ARCO en el sitio de Eficia.">
+  <meta property="og:description" content="Información general sobre los datos proporcionados en el sitio de Eficia, finalidades, servicios de terceros, derechos ARCO y datos legales por completar.">
   <meta property="og:url" content="https://eficia.com.mx/privacidad.html">
   <meta property="og:image" content="https://eficia.com.mx/assets/images/og-eficia.png">
   <meta property="og:image:secure_url" content="https://eficia.com.mx/assets/images/og-eficia.png">
@@ -33,7 +36,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aviso de Privacidad | Eficia México">
-  <meta name="twitter:description" content="Información general sobre datos personales, finalidades, terceros y derechos ARCO en el sitio de Eficia.">
+  <meta name="twitter:description" content="Información general sobre los datos proporcionados en el sitio de Eficia, finalidades, servicios de terceros, derechos ARCO y datos legales por completar.">
   <meta name="twitter:image" content="https://eficia.com.mx/assets/images/og-eficia.png">
   <meta name="twitter:image:alt" content="Aviso de privacidad de Eficia México">
 
@@ -41,19 +44,23 @@
 
   <link rel="icon" type="image/png" href="assets/eficia-mark.png">
   <link rel="preload" as="image" href="assets/eficia-logo.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/styles.css">
 
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
       "@id": "https://eficia.com.mx/#organization",
       "name": "Eficia",
       "alternateName": [
-        "Eficia México"
+        "Eficia México",
+        "Eficia Software"
       ],
       "url": "https://eficia.com.mx/",
       "logo": {
@@ -66,7 +73,8 @@
       "image": {
         "@id": "https://eficia.com.mx/#social-image"
       },
-      "description": "Empresa de tecnología con presencia en Tijuana y servicio en México, especializada en desarrollo de software, páginas web, aplicaciones móviles, automatización e integraciones.",
+      "description": "Empresa de tecnología con presencia en Tijuana y servicio en México, especializada en desarrollo de software a la medida, aplicaciones móviles, páginas web, automatización de procesos con inteligencia artificial e integración de sistemas y APIs para empresas.",
+      "slogan": "Tecnología que mejora cómo opera tu empresa.",
       "areaServed": [
         {
           "@type": "Country",
@@ -82,9 +90,76 @@
           }
         }
       ],
-      "availableLanguage": [
-        "es",
-        "es-MX"
+      "knowsAbout": [
+        "API de WhatsApp Business",
+        "CRM a la medida",
+        "ERP a la medida",
+        "SEO técnico",
+        "aplicaciones multiplataforma",
+        "aprobaciones digitales",
+        "automatización con inteligencia artificial",
+        "automatización de procesos",
+        "automatización de procesos con IA",
+        "automatización empresarial",
+        "control de producción",
+        "control operativo",
+        "dashboards empresariales",
+        "desarrollo de APIs",
+        "desarrollo de aplicaciones móviles",
+        "desarrollo de apps iOS y Android",
+        "desarrollo de páginas web",
+        "desarrollo de software a la medida",
+        "desarrollo de software en México",
+        "digitalización de procesos",
+        "diseño y desarrollo web para empresas",
+        "gestión de órdenes",
+        "integración de APIs",
+        "integración de facturación electrónica CFDI 4.0",
+        "integración de sistemas",
+        "inteligencia artificial para empresas",
+        "inventarios",
+        "páginas web con SEO",
+        "reportes automáticos",
+        "sistemas internos para empresas",
+        "software empresarial",
+        "trazabilidad"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://eficia.com.mx/contacto.html",
+        "areaServed": "MX",
+        "availableLanguage": [
+          "es",
+          "es-MX"
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tijuana",
+        "addressRegion": "Baja California",
+        "addressCountry": "MX"
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Tijuana, Baja California, México"
+      },
+      "makesOffer": [
+        {
+          "@id": "https://eficia.com.mx/software-medida.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/paginas-web.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/aplicaciones-moviles.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/automatizacion.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/integraciones.html#service"
+        }
       ]
     },
     {
@@ -111,7 +186,7 @@
       "@id": "https://eficia.com.mx/privacidad.html#webpage",
       "url": "https://eficia.com.mx/privacidad.html",
       "name": "Aviso de Privacidad | Eficia México",
-      "description": "Información general sobre los datos proporcionados en el sitio de Eficia, sus finalidades, servicios de terceros, derechos ARCO y datos legales por completar.",
+      "description": "Información general sobre los datos proporcionados en el sitio de Eficia, finalidades, servicios de terceros, derechos ARCO y datos legales por completar.",
       "inLanguage": "es-MX",
       "isPartOf": {
         "@id": "https://eficia.com.mx/#website"
@@ -130,7 +205,13 @@
       "primaryImageOfPage": {
         "@id": "https://eficia.com.mx/#social-image"
       },
-      "dateModified": "2026-09-17"
+      "dateModified": "2026-09-21",
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": [
+          "https://eficia.com.mx/privacidad.html"
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -190,15 +271,14 @@
       ]
     }
   ]
-}
-  </script>
+}</script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="site-header"><div class="nav-shell"><a class="brand" href="/"><img src="assets/eficia-logo.png" alt="Eficia"></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button><nav class="nav-links"><a href="/">Inicio</a><div class="nav-dropdown"><button class="nav-dropdown-toggle" aria-expanded="false">Servicios <i class="fa fa-angle-down"></i></button><div class="nav-dropdown-menu"><a class="dropdown-overview" href="servicios.html"><span class="dropdown-icon"><i class="fa fa-th-large"></i></span><span><strong>Todos los servicios</strong><small>Conoce todo lo que podemos construir.</small></span></a><a href="software-medida.html"><span class="dropdown-icon"><i class="fa fa-code"></i></span><span><strong>Desarrollo de software</strong><small>Sistemas y plataformas a la medida.</small></span></a><a href="paginas-web.html"><span class="dropdown-icon"><i class="fa fa-window-maximize"></i></span><span><strong>Páginas web</strong><small>Sitios rápidos y orientados a conversión.</small></span></a><a href="aplicaciones-moviles.html"><span class="dropdown-icon"><i class="fa fa-mobile"></i></span><span><strong>Aplicaciones móviles</strong><small>Apps iOS y Android.</small></span></a><a href="automatizacion.html"><span class="dropdown-icon"><i class="fa fa-bolt"></i></span><span><strong>Automatización e IA</strong><small>Menos trabajo repetitivo.</small></span></a><a href="integraciones.html"><span class="dropdown-icon"><i class="fa fa-plug"></i></span><span><strong>Integraciones y APIs</strong><small>Sistemas y datos conectados.</small></span></a></div></div><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a class="btn btn-aqua" href="contacto.html">Solicitar cotización</a></nav></div></header>
+<header class="site-header"><div class="nav-shell"><a class="brand" href="/"><img src="assets/eficia-logo.png" alt="Eficia"></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button><nav class="nav-links"><a href="/">Inicio</a><div class="nav-dropdown"><button class="nav-dropdown-toggle" aria-expanded="false">Servicios <i class="fa fa-angle-down"></i></button><div class="nav-dropdown-menu"><a class="dropdown-overview" href="servicios.html"><span class="dropdown-icon"><i class="fa fa-th-large"></i></span><span><strong>Todos los servicios</strong><small>Conoce todo lo que podemos construir.</small></span></a><a href="software-medida.html"><span class="dropdown-icon"><i class="fa fa-code"></i></span><span><strong>Desarrollo de software</strong><small>Sistemas y plataformas a la medida.</small></span></a><a href="paginas-web.html"><span class="dropdown-icon"><i class="fa fa-window-maximize"></i></span><span><strong>Páginas web</strong><small>Sitios rápidos y orientados a conversión.</small></span></a><a href="aplicaciones-moviles.html"><span class="dropdown-icon"><i class="fa fa-mobile"></i></span><span><strong>Aplicaciones móviles</strong><small>Apps iOS y Android.</small></span></a><a href="automatizacion.html"><span class="dropdown-icon"><i class="fa fa-bolt"></i></span><span><strong>Automatización e IA</strong><small>Menos trabajo repetitivo.</small></span></a><a href="integraciones.html"><span class="dropdown-icon"><i class="fa fa-plug"></i></span><span><strong>Integraciones y APIs</strong><small>Sistemas y datos conectados.</small></span></a></div></div><a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a><a class="btn btn-aqua" href="contacto.html">Solicitar cotización</a></nav></div></header>
 <main id="contenido">
   <section class="page-hero hero-background hero-privacidad"><div class="container"><h1>Aviso de privacidad.</h1><p class="lead">Información general sobre los datos proporcionados a través del sitio de Eficia.</p></div></section>
   <section class="section"><div class="container legal"><nav><a href="#datos">Datos personales</a><a href="#finalidad">Finalidades</a><a href="#terceros">Servicios y terceros</a><a href="#derechos">Derechos ARCO</a><a href="#pendiente">Antes de publicar</a></nav><div><div class="legal-block" id="datos"><h2>Datos personales</h2><p>Eficia puede recibir los datos que una persona proporciona voluntariamente mediante los formularios o medios de contacto del sitio, como nombre, empresa, correo electrónico, teléfono y la descripción de un proyecto, proceso o necesidad.</p><p>No solicitamos desde este sitio datos personales sensibles como requisito para pedir información o una cotización.</p></div><div class="legal-block" id="finalidad"><h2>Finalidades</h2><p>La información proporcionada puede utilizarse para responder solicitudes, comprender necesidades, preparar propuestas, dar seguimiento a conversaciones comerciales y mantener comunicación relacionada con el proyecto consultado.</p></div><div class="legal-block" id="terceros"><h2>Servicios, tecnologías y terceros</h2><p>Antes de publicar la versión legal definitiva se deben identificar los proveedores y tecnologías que efectivamente intervienen en el sitio —por ejemplo, hosting, formularios, correo, analítica o almacenamiento— y documentar el tratamiento o transferencia de datos que corresponda.</p></div><div class="legal-block" id="derechos"><h2>Derechos ARCO y contacto de privacidad</h2><p>La versión definitiva debe indicar el medio para ejercer derechos de acceso, rectificación, cancelación u oposición, así como el correo o canal de contacto del responsable del tratamiento.</p></div><div class="legal-block" id="pendiente"><h2>Información que debe completarse antes de publicar</h2><p>Este archivo conserva deliberadamente pendientes los datos legales que no fueron proporcionados: identidad o razón social del responsable, domicilio, correo de privacidad, procedimiento ARCO, transferencias aplicables, uso de cookies o tecnologías de seguimiento, plazos o criterios de conservación y fecha de última actualización.</p><p>Completa estos datos y solicita revisión profesional antes de utilizar este texto como aviso de privacidad definitivo.</p></div></div></div></section>
 </main>
-<footer><div class="container footer-top"><div class="footer-brand"><img src="assets/eficia-logo.png" alt="Eficia"><p>Desarrollo de software, páginas web, aplicaciones móviles, automatización e integraciones.</p></div><div class="footer-col"><b>Servicios</b><a href="software-medida.html">Desarrollo de software</a><a href="paginas-web.html">Páginas web</a><a href="aplicaciones-moviles.html">Aplicaciones móviles</a><a href="automatizacion.html">Automatización e IA</a><a href="integraciones.html">Integraciones y APIs</a></div><div class="footer-col"><b>Eficia</b><a href="nosotros.html">Nosotros</a><a href="metodologia.html">Cómo trabajamos</a><a href="casos-de-uso.html">Casos de uso</a></div><div class="footer-col"><b>Contacto</b><a href="contacto.html">Solicitar cotización</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="privacidad.html">Aviso de privacidad</a></div></div><div class="container footer-bottom"><span>© 2026 Eficia. Todos los derechos reservados.</span><span>Software · Web · Apps · Automatización · Integraciones</span></div></footer><script src="assets/app.js" defer></script>
+<footer><div class="container footer-top"><div class="footer-brand"><img src="assets/eficia-logo.png" alt="Eficia"><p>Desarrollo de software, páginas web, aplicaciones móviles, automatización e integraciones.</p></div><div class="footer-col"><b>Servicios</b><a href="software-medida.html">Desarrollo de software</a><a href="paginas-web.html">Páginas web</a><a href="aplicaciones-moviles.html">Aplicaciones móviles</a><a href="automatizacion.html">Automatización e IA</a><a href="integraciones.html">Integraciones y APIs</a></div><div class="footer-col"><b>Eficia</b><a href="nosotros.html">Nosotros</a><a href="metodologia.html">Cómo trabajamos</a><a href="casos-de-uso.html">Casos de uso</a><a href="blog.html">Blog</a></div><div class="footer-col"><b>Contacto</b><a href="contacto.html">Solicitar cotización</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="privacidad.html">Aviso de privacidad</a></div></div><div class="container footer-bottom"><span>© 2026 Eficia. Todos los derechos reservados.</span><span>Software · Web · Apps · Automatización · Integraciones</span></div></footer><script src="assets/app.js" defer></script>
 </body></html>

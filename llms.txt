@@ -1,0 +1,35 @@
+# Eficia
+
+> Empresa de desarrollo de software en Tijuana, México. Software a la medida, páginas web con SEO, aplicaciones móviles, automatización con IA e integraciones y APIs para empresas en todo México.
+
+## Servicios
+- [Desarrollo de software a la medida](https://eficia.com.mx/software-medida.html)
+- [Páginas web con SEO](https://eficia.com.mx/paginas-web.html)
+- [Aplicaciones móviles](https://eficia.com.mx/aplicaciones-moviles.html)
+- [Automatización e IA](https://eficia.com.mx/automatizacion.html)
+- [Integraciones y APIs](https://eficia.com.mx/integraciones.html)
+
+## Blog
+- [Software a la medida en México: guía completa para empresas](https://eficia.com.mx/software-a-la-medida-mexico.html): Qué es el software a la medida, cuándo conviene, cuánto tarda, cómo se contrata y qué errores evitar. Guía práctica para empresas en México.
+- [¿Cuánto cuesta el software a la medida en México?](https://eficia.com.mx/cuanto-cuesta-software-a-la-medida-mexico.html): Rangos de referencia en pesos, factores que mueven el precio, modelos de contratación y cómo presupuestar un sistema a la medida sin sorpresas.
+- [Software a la medida vs ERP vs SaaS: cuál conviene a tu empresa](https://eficia.com.mx/software-a-la-medida-vs-erp-vs-saas.html): Comparativa práctica entre software a la medida, ERP y SaaS: costos, flexibilidad, tiempos, riesgos y criterios para decidir en una empresa mexicana.
+- [Cómo dejar de operar en Excel: cuándo y cómo migrar a un sistema propio](https://eficia.com.mx/reemplazar-excel-por-sistema-empresa.html): Señales de que Excel ya no alcanza, riesgos de operar con hojas de cálculo y un plan de migración paso a paso hacia un sistema a la medida.
+- [Cómo elegir una empresa de desarrollo de software en México: 12 criterios](https://eficia.com.mx/como-elegir-empresa-desarrollo-software-mexico.html): Checklist de 12 criterios para elegir empresa de desarrollo de software en México: portafolio, propiedad del código, seguridad, contrato y señales de alerta.
+- [Automatización de procesos empresariales: guía práctica para empresas en México](https://eficia.com.mx/automatizacion-procesos-empresas-mexico.html): Qué procesos automatizar primero, cómo calcular el retorno, herramientas y errores comunes. Guía de automatización empresarial para México.
+- [Automatización con inteligencia artificial: 8 casos que sí funcionan en empresas](https://eficia.com.mx/automatizacion-con-ia-empresas-mexico.html): Casos reales de IA para empresas en México: lectura de documentos, atención al cliente, reportes y clasificación. Riesgos, datos y cómo empezar.
+- [WhatsApp Business API: cómo automatizar la atención y las ventas en México](https://eficia.com.mx/whatsapp-business-api-automatizacion-mexico.html): Qué es la API de WhatsApp Business, diferencias con la app, casos de uso, costos por conversación y cómo integrarla con tu CRM o sistema.
+- [Integración de sistemas y APIs: cómo conectar tu operación sin recapturas](https://eficia.com.mx/integracion-sistemas-apis-mexico.html): Qué es integrar sistemas, tipos de integración (API, base de datos, archivos), arquitectura, seguridad y pasos para conectar ERP, CRM y tiendas.
+- [CFDI 4.0: cómo integrar la facturación electrónica con tu sistema o ERP](https://eficia.com.mx/facturacion-cfdi-integracion-sistemas-mexico.html): Cómo integrar la facturación electrónica CFDI 4.0 con tu ERP o software a la medida: PAC, complementos, cancelaciones, errores comunes y buenas prácticas.
+- [¿Qué es una API y para qué sirve en una empresa?](https://eficia.com.mx/que-es-una-api-para-que-sirve-empresa.html): Qué es una API explicada sin tecnicismos, ejemplos reales en empresas mexicanas, tipos (REST, webhooks), seguridad y cuándo necesitas una.
+- [Desarrollo de apps para empresas: de la idea a una herramienta que se usa](https://eficia.com.mx/desarrollo-apps-empresas-mexico.html): Cómo planear una app móvil empresarial en México: casos de uso, MVP, APIs, seguridad, publicación en tiendas, costos y mantenimiento.
+- [App nativa, multiplataforma o PWA: cuál elegir para tu empresa](https://eficia.com.mx/app-nativa-multiplataforma-pwa.html): Comparativa de app nativa, multiplataforma (Flutter, React Native) y PWA: costos, rendimiento, funciones, tiempos y criterios para decidir.
+- [Páginas web con SEO: cómo convertir tráfico orgánico en prospectos](https://eficia.com.mx/paginas-web-seo-empresas-mexico.html): Estrategia para una página web empresarial en México que aparezca en Google: estructura, palabras clave, contenido, velocidad, datos estructurados y conversión.
+- [SEO técnico: checklist para sitios web de empresas en México](https://eficia.com.mx/seo-tecnico-checklist-empresas-mexico.html): Checklist de SEO técnico: rastreo, indexación, Core Web Vitals, datos estructurados, hreflang es-MX, sitemap, canonicals y errores comunes.
+- [¿Cuánto cuesta una página web para una empresa en México?](https://eficia.com.mx/cuanto-cuesta-pagina-web-empresa-mexico.html): Rangos de precio de una página web empresarial en México, qué incluye, costos recurrentes (dominio, hosting) y cómo elegir según tu objetivo.
+
+## Empresa
+- [Nosotros](https://eficia.com.mx/nosotros.html)
+- [Metodología](https://eficia.com.mx/metodologia.html)
+- [Casos de uso](https://eficia.com.mx/casos-de-uso.html)
+- [Preguntas frecuentes](https://eficia.com.mx/preguntas-frecuentes.html)
+- [Contacto](https://eficia.com.mx/contacto.html)

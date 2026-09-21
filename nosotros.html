@@ -14,15 +14,18 @@
   <meta name="publisher" content="Eficia">
   <meta name="application-name" content="Eficia">
 
+  <meta name="geo.region" content="MX-BCN">
+  <meta name="geo.placename" content="Tijuana, Baja California, México">
   <link rel="canonical" href="https://eficia.com.mx/nosotros.html">
   <link rel="alternate" hreflang="es-MX" href="https://eficia.com.mx/nosotros.html">
   <link rel="alternate" hreflang="x-default" href="https://eficia.com.mx/nosotros.html">
 
+  <link rel="alternate" type="application/rss+xml" title="Blog de Eficia" href="https://eficia.com.mx/feed.xml">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="Eficia">
   <meta property="og:title" content="Eficia | Empresa de Desarrollo de Software en México">
-  <meta property="og:description" content="Empresa de tecnología en México con presencia en Tijuana: software a la medida, páginas web, apps móviles, automatización e integraciones.">
+  <meta property="og:description" content="Conoce Eficia, empresa de tecnología en México con presencia en Tijuana. Desarrollamos software, web, apps, automatización e integraciones para empresas.">
   <meta property="og:url" content="https://eficia.com.mx/nosotros.html">
   <meta property="og:image" content="https://eficia.com.mx/assets/images/og-eficia.png">
   <meta property="og:image:secure_url" content="https://eficia.com.mx/assets/images/og-eficia.png">
@@ -33,7 +36,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Eficia | Empresa de Desarrollo de Software en México">
-  <meta name="twitter:description" content="Software, web, apps, automatización e integraciones para empresas en México desde Tijuana.">
+  <meta name="twitter:description" content="Conoce Eficia, empresa de tecnología en México con presencia en Tijuana. Desarrollamos software, web, apps, automatización e integraciones para empresas.">
   <meta name="twitter:image" content="https://eficia.com.mx/assets/images/og-eficia.png">
   <meta name="twitter:image:alt" content="Eficia, empresa de tecnología y desarrollo de software en México">
 
@@ -42,19 +45,23 @@
   <link rel="icon" type="image/png" href="assets/eficia-mark.png">
   <link rel="preload" as="image" href="assets/eficia-logo.png">
   <link rel="preload" as="image" href="assets/images/hero-nosotros.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/styles.css">
 
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
       "@id": "https://eficia.com.mx/#organization",
       "name": "Eficia",
       "alternateName": [
-        "Eficia México"
+        "Eficia México",
+        "Eficia Software"
       ],
       "url": "https://eficia.com.mx/",
       "logo": {
@@ -72,8 +79,8 @@
           "@id": "https://eficia.com.mx/nosotros.html#company-image"
         }
       ],
-      "description": "Eficia es una empresa de tecnología con presencia en Tijuana y servicio en México que desarrolla software a la medida, páginas web, aplicaciones móviles, automatización con inteligencia artificial e integraciones entre sistemas.",
-      "slogan": "Tecnología para resolver problemas reales de negocio.",
+      "description": "Empresa de tecnología con presencia en Tijuana y servicio en México, especializada en desarrollo de software a la medida, aplicaciones móviles, páginas web, automatización de procesos con inteligencia artificial e integración de sistemas y APIs para empresas.",
+      "slogan": "Tecnología que mejora cómo opera tu empresa.",
       "areaServed": [
         {
           "@type": "Country",
@@ -89,35 +96,45 @@
           }
         }
       ],
-      "availableLanguage": [
-        "es",
-        "es-MX"
-      ],
       "knowsAbout": [
-        "desarrollo de software",
-        "software a la medida",
-        "software empresarial",
-        "sistemas internos",
-        "plataformas web",
-        "desarrollo de páginas web",
-        "desarrollo de aplicaciones móviles",
-        "apps iOS y Android",
+        "API de WhatsApp Business",
+        "CRM a la medida",
+        "ERP a la medida",
+        "SEO técnico",
+        "aplicaciones multiplataforma",
+        "aprobaciones digitales",
+        "automatización con inteligencia artificial",
         "automatización de procesos",
-        "inteligencia artificial aplicada a empresas",
-        "integración de sistemas",
-        "integración de APIs",
-        "bases de datos",
-        "dashboards",
+        "automatización de procesos con IA",
+        "automatización empresarial",
+        "control de producción",
+        "control operativo",
+        "dashboards empresariales",
+        "desarrollo de APIs",
+        "desarrollo de aplicaciones móviles",
+        "desarrollo de apps iOS y Android",
+        "desarrollo de páginas web",
+        "desarrollo de software a la medida",
+        "desarrollo de software en México",
         "digitalización de procesos",
-        "experiencia de usuario",
-        "definición de alcance",
-        "MVP",
-        "mejora continua"
+        "diseño y desarrollo web para empresas",
+        "gestión de órdenes",
+        "integración de APIs",
+        "integración de facturación electrónica CFDI 4.0",
+        "integración de sistemas",
+        "inteligencia artificial para empresas",
+        "inventarios",
+        "páginas web con SEO",
+        "reportes automáticos",
+        "sistemas internos para empresas",
+        "software empresarial",
+        "trazabilidad"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
         "url": "https://eficia.com.mx/contacto.html",
+        "areaServed": "MX",
         "availableLanguage": [
           "es",
           "es-MX"
@@ -125,7 +142,34 @@
       },
       "hasOfferCatalog": {
         "@id": "https://eficia.com.mx/servicios.html#offer-catalog"
-      }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tijuana",
+        "addressRegion": "Baja California",
+        "addressCountry": "MX"
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Tijuana, Baja California, México"
+      },
+      "makesOffer": [
+        {
+          "@id": "https://eficia.com.mx/software-medida.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/paginas-web.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/aplicaciones-moviles.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/automatizacion.html#service"
+        },
+        {
+          "@id": "https://eficia.com.mx/integraciones.html#service"
+        }
+      ]
     },
     {
       "@type": "WebSite",
@@ -168,7 +212,7 @@
       "@id": "https://eficia.com.mx/nosotros.html#webpage",
       "url": "https://eficia.com.mx/nosotros.html",
       "name": "Eficia | Empresa de Desarrollo de Software en México",
-      "description": "Conoce Eficia, empresa de tecnología en México con presencia en Tijuana. Desarrollamos software, web, apps, automatización e integraciones alrededor de problemas reales de negocio.",
+      "description": "Conoce Eficia, empresa de tecnología en México con presencia en Tijuana. Desarrollamos software, web, apps, automatización e integraciones para empresas.",
       "inLanguage": "es-MX",
       "isPartOf": {
         "@id": "https://eficia.com.mx/#website"
@@ -196,7 +240,13 @@
         "arquitectura tecnológica",
         "mejora continua"
       ],
-      "dateModified": "2026-09-17"
+      "dateModified": "2026-09-21",
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": [
+          "https://eficia.com.mx/nosotros.html"
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -272,12 +322,11 @@
       ]
     }
   ]
-}
-  </script>
+}</script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="site-header"><div class="nav-shell"><a class="brand" href="/"><img src="assets/eficia-logo.png" alt="Eficia"></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button><nav class="nav-links"><a href="/">Inicio</a><div class="nav-dropdown"><button class="nav-dropdown-toggle" aria-expanded="false">Servicios <i class="fa fa-angle-down"></i></button><div class="nav-dropdown-menu"><a class="dropdown-overview" href="servicios.html"><span class="dropdown-icon"><i class="fa fa-th-large"></i></span><span><strong>Todos los servicios</strong><small>Conoce todo lo que podemos construir.</small></span></a><a href="software-medida.html"><span class="dropdown-icon"><i class="fa fa-code"></i></span><span><strong>Desarrollo de software</strong><small>Sistemas y plataformas a la medida.</small></span></a><a href="paginas-web.html"><span class="dropdown-icon"><i class="fa fa-window-maximize"></i></span><span><strong>Páginas web</strong><small>Sitios rápidos y orientados a conversión.</small></span></a><a href="aplicaciones-moviles.html"><span class="dropdown-icon"><i class="fa fa-mobile"></i></span><span><strong>Aplicaciones móviles</strong><small>Apps iOS y Android.</small></span></a><a href="automatizacion.html"><span class="dropdown-icon"><i class="fa fa-bolt"></i></span><span><strong>Automatización e IA</strong><small>Menos trabajo repetitivo.</small></span></a><a href="integraciones.html"><span class="dropdown-icon"><i class="fa fa-plug"></i></span><span><strong>Integraciones y APIs</strong><small>Sistemas y datos conectados.</small></span></a></div></div><a href="nosotros.html" aria-current="page">Nosotros</a><a href="contacto.html">Contacto</a><a class="btn btn-aqua" href="contacto.html">Solicitar cotización</a></nav></div></header>
+<header class="site-header"><div class="nav-shell"><a class="brand" href="/"><img src="assets/eficia-logo.png" alt="Eficia"></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button><nav class="nav-links"><a href="/">Inicio</a><div class="nav-dropdown"><button class="nav-dropdown-toggle" aria-expanded="false">Servicios <i class="fa fa-angle-down"></i></button><div class="nav-dropdown-menu"><a class="dropdown-overview" href="servicios.html"><span class="dropdown-icon"><i class="fa fa-th-large"></i></span><span><strong>Todos los servicios</strong><small>Conoce todo lo que podemos construir.</small></span></a><a href="software-medida.html"><span class="dropdown-icon"><i class="fa fa-code"></i></span><span><strong>Desarrollo de software</strong><small>Sistemas y plataformas a la medida.</small></span></a><a href="paginas-web.html"><span class="dropdown-icon"><i class="fa fa-window-maximize"></i></span><span><strong>Páginas web</strong><small>Sitios rápidos y orientados a conversión.</small></span></a><a href="aplicaciones-moviles.html"><span class="dropdown-icon"><i class="fa fa-mobile"></i></span><span><strong>Aplicaciones móviles</strong><small>Apps iOS y Android.</small></span></a><a href="automatizacion.html"><span class="dropdown-icon"><i class="fa fa-bolt"></i></span><span><strong>Automatización e IA</strong><small>Menos trabajo repetitivo.</small></span></a><a href="integraciones.html"><span class="dropdown-icon"><i class="fa fa-plug"></i></span><span><strong>Integraciones y APIs</strong><small>Sistemas y datos conectados.</small></span></a></div></div><a href="nosotros.html" aria-current="page">Nosotros</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a><a class="btn btn-aqua" href="contacto.html">Solicitar cotización</a></nav></div></header>
 <main id="contenido">
   <section class="hero-blue hero-background hero-team"><div class="container page-hero-grid"><div class="reveal-left"><span class="service-hero-tag"><i class="fa fa-circle-o"></i> Eficia</span><h1>Construimos tecnología para resolver problemas reales de negocio.</h1></div><aside class="reveal-right"><p>Software, web, aplicaciones, automatización e integraciones son herramientas. El punto de partida siempre es lo que tu empresa necesita lograr.</p></aside></div></section>
   <section class="section"><div class="container statement-center"><div class="statement reveal">Objetivo <span class="soft-word">antes que tecnología.</span> Utilidad <span class="blue-word">antes que complejidad.</span></div></div></section>
@@ -286,5 +335,5 @@
   <section class="section"><div class="container"><div class="section-intro centered reveal"><h2>Qué puedes esperar al trabajar con Eficia.</h2><p>Un proyecto con alcance claro, comunicación directa y decisiones conectadas con el objetivo.</p></div><div class="usecase-grid stagger"><div class="usecase-card"><i class="fa fa-map-signs"></i><div><h3>Definición antes de desarrollar</h3><p>Aterrizamos el problema, usuarios, prioridades y primera versión antes de sumar funciones.</p></div></div><div class="usecase-card"><i class="fa fa-comments-o"></i><div><h3>Comunicación clara</h3><p>Explicamos decisiones técnicas en términos útiles para negocio y operación.</p></div></div><div class="usecase-card"><i class="fa fa-code"></i><div><h3>Construcción con propósito</h3><p>Diseño, desarrollo e integraciones se alinean al resultado que debe lograr la solución.</p></div></div><div class="usecase-card"><i class="fa fa-repeat"></i><div><h3>Mejora continua</h3><p>La primera versión es una base; evolucionamos con uso, datos y nuevas prioridades.</p></div></div></div></div></section>
 <section class="compact-cta"><div class="container"><div><h2>¿Tienes un proyecto y quieres aterrizarlo?</h2><p>Cuéntanos el objetivo. Nosotros te ayudamos a convertirlo en una solución concreta.</p></div><a class="btn btn-arrow" href="contacto.html">Hablar con Eficia</a></div></section>
 </main>
-<footer><div class="container footer-top"><div class="footer-brand"><img src="assets/eficia-logo.png" alt="Eficia"><p>Desarrollo de software, páginas web, aplicaciones móviles, automatización e integraciones.</p></div><div class="footer-col"><b>Servicios</b><a href="software-medida.html">Desarrollo de software</a><a href="paginas-web.html">Páginas web</a><a href="aplicaciones-moviles.html">Aplicaciones móviles</a><a href="automatizacion.html">Automatización e IA</a><a href="integraciones.html">Integraciones y APIs</a></div><div class="footer-col"><b>Eficia</b><a href="nosotros.html">Nosotros</a><a href="metodologia.html">Cómo trabajamos</a><a href="casos-de-uso.html">Casos de uso</a></div><div class="footer-col"><b>Contacto</b><a href="contacto.html">Solicitar cotización</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="privacidad.html">Aviso de privacidad</a></div></div><div class="container footer-bottom"><span>© 2026 Eficia. Todos los derechos reservados.</span><span>Software · Web · Apps · Automatización · Integraciones</span></div></footer><script src="assets/app.js" defer></script>
+<footer><div class="container footer-top"><div class="footer-brand"><img src="assets/eficia-logo.png" alt="Eficia"><p>Desarrollo de software, páginas web, aplicaciones móviles, automatización e integraciones.</p></div><div class="footer-col"><b>Servicios</b><a href="software-medida.html">Desarrollo de software</a><a href="paginas-web.html">Páginas web</a><a href="aplicaciones-moviles.html">Aplicaciones móviles</a><a href="automatizacion.html">Automatización e IA</a><a href="integraciones.html">Integraciones y APIs</a></div><div class="footer-col"><b>Eficia</b><a href="nosotros.html">Nosotros</a><a href="metodologia.html">Cómo trabajamos</a><a href="casos-de-uso.html">Casos de uso</a><a href="blog.html">Blog</a></div><div class="footer-col"><b>Contacto</b><a href="contacto.html">Solicitar cotización</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="privacidad.html">Aviso de privacidad</a></div></div><div class="container footer-bottom"><span>© 2026 Eficia. Todos los derechos reservados.</span><span>Software · Web · Apps · Automatización · Integraciones</span></div></footer><script src="assets/app.js" defer></script>
 </body></html>

@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://eficia.com.mx/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/eficia-hero.png</image:loc>
     </image:image>
@@ -12,26 +12,23 @@
       <image:loc>https://eficia.com.mx/assets/images/software-medida.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/servicios.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/soluciones-hero.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/soluciones.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/diagnostico-proceso.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/software-medida.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-software.png</image:loc>
     </image:image>
@@ -39,26 +36,23 @@
       <image:loc>https://eficia.com.mx/assets/images/software-medida.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/paginas-web.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-web.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/aplicaciones-moviles.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-apps.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/automatizacion.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-automatizaciones.png</image:loc>
     </image:image>
@@ -66,10 +60,9 @@
       <image:loc>https://eficia.com.mx/assets/images/automatizacion-documentos.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/integraciones.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-integraciones.png</image:loc>
     </image:image>
@@ -77,26 +70,23 @@
       <image:loc>https://eficia.com.mx/assets/images/integracion-sistemas.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/casos-de-uso.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-casos-de-uso.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/metodologia.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-metodologia.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/nosotros.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-nosotros.png</image:loc>
     </image:image>
@@ -104,10 +94,9 @@
       <image:loc>https://eficia.com.mx/assets/images/empresa-industrial.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/proyectos.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/hero-proyectos.png</image:loc>
     </image:image>
@@ -121,26 +110,141 @@
       <image:loc>https://eficia.com.mx/assets/images/cotimax2.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/contacto.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/diagnostico-proceso.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/preguntas-frecuentes.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <image:image>
       <image:loc>https://eficia.com.mx/assets/images/visibilidad-operativa.png</image:loc>
     </image:image>
   </url>
-
   <url>
     <loc>https://eficia.com.mx/privacidad.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://eficia.com.mx/blog.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/software-a-la-medida-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/cuanto-cuesta-software-a-la-medida-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/software-a-la-medida-vs-erp-vs-saas.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/reemplazar-excel-por-sistema-empresa.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/como-elegir-empresa-desarrollo-software-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/automatizacion-procesos-empresas-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/automatizacion-con-ia-empresas-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/whatsapp-business-api-automatizacion-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/integracion-sistemas-apis-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/facturacion-cfdi-integracion-sistemas-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/que-es-una-api-para-que-sirve-empresa.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/desarrollo-apps-empresas-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/app-nativa-multiplataforma-pwa.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/paginas-web-seo-empresas-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/seo-tecnico-checklist-empresas-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://eficia.com.mx/cuanto-cuesta-pagina-web-empresa-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
